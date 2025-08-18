@@ -1,17 +1,5 @@
 # 🎤 JARVIS - Advanced AI Voice Assistant
 
-<div align="center">
-
-**Professional Multi-AI Voice Assistant with Advanced Features**
-
-*Seamlessly integrate multiple AI models with sophisticated voice control and markdown rendering*
-
-[🚀 Live Demo](#demo) • [📖 Documentation](#documentation) • [🔧 Setup](#setup) • [🎯 Features](#features)
-
-</div>
-
----
-
 ## 🌟 Overview
 
 JARVIS is a cutting-edge voice assistant that combines the power of multiple AI models with advanced web technologies. Built for modern browsers, it offers an intuitive voice-controlled interface with professional-grade features including real-time markdown rendering, multi-language support, and responsive design.
