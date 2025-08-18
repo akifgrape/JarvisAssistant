@@ -1,71 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jarvis Assistant</title>
-    <meta name="description" content="Minimalist voice assistant powered by AI">
-    <meta name="author" content="Akif Grape">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎤</text></svg>">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/artyom.js/1.0.6/artyom.min.js" onerror="this.onerror=null;this.src='artyom.min.js'"></script>
-</head> 
-<body class="dark-theme">
+    <meta
+      name="description"
+      content="Minimalist voice assistant powered by AI"
+    />
+    <meta name="author" content="Akif Grape" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎤</text></svg>"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/artyom.js/1.0.6/artyom.min.js"
+      onerror="this.onerror=null;this.src='artyom.min.js'"
+    ></script>
+  </head>
+  <body class="dark-theme">
     <div class="container">
-        <div class="header"> 
-            <h1>Jarvis Assistant</h1>
-            <div class="top-controls">
-                <select id="language-select" title="Select language">
-                    <option value="en-US">🇺🇸 English</option>
-                    <option value="tr-TR">🇹🇷 Türkçe</option>
-                    <option value="de-DE">🇩🇪 Deutsch</option>
-                    <option value="fr-FR">🇫🇷 Français</option>
-                    <option value="es-ES">🇪🇸 Español</option>
-                    <option value="it-IT">🇮🇹 Italiano</option>
-                    <option value="pt-PT">🇵🇹 Português</option>
-                    <option value="ru-RU">🇷� Русский</option>
-                    <option value="ja-JP">🇯🇵 日本語</option>
-                    <option value="ko-KR">🇰🇷 한국어</option>
-                    <option value="zh-CN">🇨🇳 中文</option>
-                    <option value="ar-SA">🇸🇦 العربية</option>
-                </select>
-                <button id="clear-chat" title="Clear chat history">🗑️</button>
-            </div>
+      <div class="header">
+        <h1>Jarvis Assistant</h1>
+        <div class="top-controls">
+          <select id="language-select" title="Select language">
+            <option value="en-US">🇺🇸 English</option>
+            <option value="tr-TR">🇹🇷 Türkçe</option>
+            <option value="de-DE">🇩🇪 Deutsch</option>
+            <option value="fr-FR">🇫🇷 Français</option>
+            <option value="es-ES">🇪🇸 Español</option>
+            <option value="it-IT">🇮🇹 Italiano</option>
+            <option value="pt-PT">🇵🇹 Português</option>
+            <option value="ru-RU">🇷� Русский</option>
+            <option value="ja-JP">🇯🇵 日本語</option>
+            <option value="ko-KR">🇰🇷 한국어</option>
+            <option value="zh-CN">🇨🇳 中文</option>
+            <option value="ar-SA">🇸🇦 العربية</option>
+          </select>
+          <button id="clear-chat" title="Clear chat history">🗑️</button>
         </div>
-        
-        <div class="assistant-card">
-            <button id="mic-btn" title="Start voice recognition" aria-label="Voice Recognition">
-                <i class="fas fa-microphone"></i>
-            </button>
-            <div id="status">Click microphone to start</div>
-            
-            <div class="model-selector">
-                <label for="ai-model">AI Model:</label>
-                <select id="ai-model">
-                    <option value="gemini">� Google Gemini (Free)</option>
-                    <option value="openai">🤖 OpenAI GPT-3.5</option>
-                    <option value="deepseek">🧠 DeepSeek (Free)</option>
-                </select>
-            </div>
-            
-            <div id="chatlog" aria-live="polite">
-            </div>
-            
-            <div class="input-area">
-                <input 
-                    type="text" 
-                    id="userinput" 
-                    placeholder="Type your message..."
-                    aria-label="Text input"
-                />
-                <button id="speakbtn">Send</button>
-            </div>
-            
-            <div id="error" role="alert" style="display: none;"></div>
+      </div>
+
+      <div class="assistant-card">
+        <button
+          id="mic-btn"
+          title="Start voice recognition"
+          aria-label="Voice Recognition"
+        >
+          <i class="fas fa-microphone"></i>
+        </button>
+        <div id="status">Click microphone to start</div>
+
+        <div class="model-selector">
+          <label for="ai-model">AI Model:</label>
+          <select id="ai-model">
+            <option value="gemini">� Google Gemini (Free)</option>
+            <option value="openai">🤖 OpenAI GPT-3.5</option>
+            <option value="deepseek">🧠 DeepSeek (Free)</option>
+          </select>
         </div>
+
+        <div id="chatlog" aria-live="polite"></div>
+
+        <div class="input-area">
+          <input
+            type="text"
+            id="userinput"
+            placeholder="Type your message..."
+            aria-label="Text input"
+          />
+          <button id="speakbtn">Send</button>
+        </div>
+
+        <div id="error" role="alert" style="display: none"></div>
+      </div>
     </div>
     <script src="artyom.min.js"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

@@ -3,10 +3,11 @@
 ## 🌟 Overview
 
 JARVIS is a cutting-edge voice assistant that combines the power of multiple AI models with advanced web technologies. Built for modern browsers, it offers an intuitive voice-controlled interface with professional-grade features including real-time markdown rendering, multi-language support, and responsive design.
- 
+
 ## ✨ Key Features
 
 ### 🤖 **Multi-AI Integration**
+
 - **Google Gemini Pro** - Advanced reasoning and conversation
 - **OpenAI GPT-4o-mini** - High-quality text generation
 - **DeepSeek V3** - Specialized programming assistance
@@ -14,6 +15,7 @@ JARVIS is a cutting-edge voice assistant that combines the power of multiple AI 
 - **Fallback System** - Seamless switching between providers
 
 ### 🎙️ **Advanced Voice Control**
+
 - **Real-time Speech Recognition** using Artyom.js
 - **Natural Text-to-Speech** with voice filtering
 - **Multi-language Support** (English, Turkish, Spanish, French, German, Italian)
@@ -21,6 +23,7 @@ JARVIS is a cutting-edge voice assistant that combines the power of multiple AI 
 - **Voice Command Processing** - Website opening, search, conversation
 
 ### 📝 **Rich Content Rendering**
+
 - **Live Markdown Support** - Real-time rendering with syntax highlighting
 - **Code Block Optimization** - Responsive containers with proper formatting
 - **XSS Protection** - Secure content sanitization
@@ -28,6 +31,7 @@ JARVIS is a cutting-edge voice assistant that combines the power of multiple AI 
 - **Syntax Highlighting** - Multiple programming languages
 
 ### � **Developer Features**
+
 - **No Framework Dependencies** - Pure JavaScript ES6+
 - **Modular Architecture** - Easy to extend and customize
 - **Environment Configuration** - Secure API key management
@@ -37,11 +41,13 @@ JARVIS is a cutting-edge voice assistant that combines the power of multiple AI 
 ## � Quick Start
 
 ### Prerequisites
+
 - Modern web browser with microphone support
 - API keys for desired AI services
 - Local development server
 
 ### 1. Clone & Setup
+
 ```bash
 git clone https://github.com/akifgrape/jarvis-voice-assistant.git
 cd jarvis-voice-assistant
@@ -51,7 +57,9 @@ cp .env.example .env
 ```
 
 ### 2. Configure API Keys
+
 Edit your `.env` file:
+
 ```env
 # Required: At least one API key
 GEMINI_API_KEY=your_gemini_api_key_here
@@ -63,6 +71,7 @@ CUSTOM_AI_ENDPOINT=your_custom_endpoint  # Optional
 ```
 
 ### 3. Launch Application
+
 ```bash
 # Start local server
 python3 -m http.server 8080
@@ -74,11 +83,13 @@ npx serve .
 ```
 
 ### 4. Access Interface
+
 Open `http://localhost:8080` in your browser and grant microphone permissions.
 
 ## 🎯 Usage Examples
 
 ### Voice Commands
+
 ```
 "Hey JARVIS, open YouTube"          → Opens youtube.com
 "Find pizza recipes"                → Searches and displays results
@@ -88,6 +99,7 @@ Open `http://localhost:8080` in your browser and grant microphone permissions.
 ```
 
 ### Text Interface
+
 - **Type questions** in the input field
 - **Select AI model** from dropdown
 - **Use markdown** for formatted responses
@@ -96,33 +108,37 @@ Open `http://localhost:8080` in your browser and grant microphone permissions.
 ## 🔧 Configuration
 
 ### AI Model Settings
+
 ```javascript
 // Customize AI personalities in app.js
 const AI_MODELS = {
-    'gemini': {
-        name: 'Google Gemini Pro',
-        systemPrompt: 'You are JARVIS, a helpful AI assistant...',
-        endpoint: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent'
-    },
-    // Add more models...
+  gemini: {
+    name: "Google Gemini Pro",
+    systemPrompt: "You are JARVIS, a helpful AI assistant...",
+    endpoint:
+      "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent",
+  },
+  // Add more models...
 };
 ```
 
 ### Voice Settings
+
 ```javascript
 // Customize voice recognition
 artyom.addCommands({
-    indexes: ['open *', 'go to *'],
-    smart: true,
-    action: function(i, wildcard) {
-        openWebsite(wildcard);
-    }
+  indexes: ["open *", "go to *"],
+  smart: true,
+  action: function (i, wildcard) {
+    openWebsite(wildcard);
+  },
 });
 ```
 
 ## 🛠️ Advanced Features
 
 ### Smart Website Opening
+
 ```javascript
 // Intelligent URL resolution
 "Open Discord" → discord.com
@@ -131,6 +147,7 @@ artyom.addCommands({
 ```
 
 ### Markdown Rendering
+
 - Real-time markdown parsing
 - Syntax-highlighted code blocks
 - Table rendering
@@ -138,6 +155,7 @@ artyom.addCommands({
 - Image embedding
 
 ### Multi-language Support
+
 - Dynamic language switching
 - Localized speech recognition
 - Regional voice preferences
