@@ -1,82 +1,192 @@
-# jarvis-assistand
-Jarvis is a voice-based personal assistant for Google Chrome that helps you increase productivity while browsing the web. With Jarvis, you can use voice commands to set timers, reminders, translate phrases, search the web, and much more.
+# 🎤 JARVIS - Advanced AI Voice Assistant
 
+<div align="center">
 
-## Some of Jarvis's features include:
+**Professional Multi-AI Voice Assistant with Advanced Features**
 
-* Timer: Simply say "set a timer for X minutes" and Jarvis will start counting down.
+*Seamlessly integrate multiple AI models with sophisticated voice control and markdown rendering*
 
-* Reminder: Set reminders for important tasks or events by saying "remind me to do X at Y time."
+[🚀 Live Demo](#demo) • [📖 Documentation](#documentation) • [🔧 Setup](#setup) • [🎯 Features](#features)
 
-* Translation: Translate phrases or sentences from one language to another by saying "translate X to Y language."
+</div>
 
-* Web search: Look up information on the web by saying "search for X on Google."
+---
 
-* Weather: Check the weather in your area by saying "what's the weather like today?"
+## 🌟 Overview
 
-Jarvis is designed to make your web browsing experience more efficient and convenient. With its voice-based interface, you can easily perform tasks without having to type or click. Try out Jarvis today and see how it can improve your productivity!
+JARVIS is a cutting-edge voice assistant that combines the power of multiple AI models with advanced web technologies. Built for modern browsers, it offers an intuitive voice-controlled interface with professional-grade features including real-time markdown rendering, multi-language support, and responsive design.
 
+## ✨ Key Features
 
-## Here's a code snippet that I'm leaving to help you out with Jarvis, which I developed for my personal use.
+### 🤖 **Multi-AI Integration**
+- **Google Gemini Pro** - Advanced reasoning and conversation
+- **OpenAI GPT-4o-mini** - High-quality text generation
+- **DeepSeek V3** - Specialized programming assistance
+- **Smart Model Selection** - Automatic optimization per query type
+- **Fallback System** - Seamless switching between providers
 
-``` 
-javascript
+### 🎙️ **Advanced Voice Control**
+- **Real-time Speech Recognition** using Artyom.js
+- **Natural Text-to-Speech** with voice filtering
+- **Multi-language Support** (English, Turkish, Spanish, French, German, Italian)
+- **Smart Speech Management** - Prevents feedback loops
+- **Voice Command Processing** - Website opening, search, conversation
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Artyom.js Chat Example</title>
-  </head>
-  <body>
-    <h1>Artyom.js Chat Example</h1>
-    <div id="chatlog"></div>
-    <input type="text" id="userinput" />
-    <button id="speakbtn">Speak</button>
+### 📝 **Rich Content Rendering**
+- **Live Markdown Support** - Real-time rendering with syntax highlighting
+- **Code Block Optimization** - Responsive containers with proper formatting
+- **XSS Protection** - Secure content sanitization
+- **Copy-to-Clipboard** - Easy code sharing
+- **Syntax Highlighting** - Multiple programming languages
 
-    <script src="https://sdkcarlos.github.io/sites/artyom-js/releases/artyom.min.js"></script>
-    <script>
-      var artyom = new Artyom();
+### � **Developer Features**
+- **No Framework Dependencies** - Pure JavaScript ES6+
+- **Modular Architecture** - Easy to extend and customize
+- **Environment Configuration** - Secure API key management
+- **Error Handling** - Comprehensive debugging system
+- **Performance Optimized** - Fast loading and smooth interactions
 
-      // Start the voice recognition
-      artyom.initialize({
-        lang: "en-US",
-        continuous: true,
-        debug: true,
-        listen: true,
-      });
+## � Quick Start
 
-      // Add a command
-      artyom.addCommands({
-        indexes: ["hello", "hi", "hey"],
-        action: function () {
-          var response = "Hello there!";
-          artyom.say(response);
-          addToChatLog("Artyom: " + response);
-        },
-      });
+### Prerequisites
+- Modern web browser with microphone support
+- API keys for desired AI services
+- Local development server
 
-      // Handle user input
-      document.getElementById("speakbtn").addEventListener("click", function () {
-        var userInput = document.getElementById("userinput").value;
-        if (userInput) {
-          artyom.say(userInput);
-          addToChatLog("User: " + userInput);
-          document.getElementById("userinput").value = "";
-        }
-      });
+### 1. Clone & Setup
+```bash
+git clone https://github.com/akifgrape/jarvis-voice-assistant.git
+cd jarvis-voice-assistant
 
-      // Add to chat log
-      function addToChatLog(message) {
-        var chatLog = document.getElementById("chatlog");
-        var messageNode = document.createElement("p");
-        messageNode.innerText = message;
-        chatLog.appendChild(messageNode);
-      }
-    </script>
-  </body>
-</html>
-
+# Copy environment template
+cp .env.example .env
 ```
-I don't mean to boast, but mine is even better as it works with full voice commands. Using the Artyom.js library, I created a simple chat application where the user can write text in the input box and listen to Artyom's voice response by clicking the 'Speak' button. Additionally, Artyom can respond with a specific answer when the user says a certain command.
 
-## Creator and developer [Akif Grape](https://github.com/akifgrape) 🔥
+### 2. Configure API Keys
+Edit your `.env` file:
+```env
+# Required: At least one API key
+GEMINI_API_KEY=your_gemini_api_key_here
+OPENAI_API_KEY=your_openai_api_key_here  # Optional
+DEEPSEEK_API_KEY=your_deepseek_api_key_here  # Optional
+
+# Optional: Custom endpoints
+CUSTOM_AI_ENDPOINT=your_custom_endpoint  # Optional
+```
+
+### 3. Launch Application
+```bash
+# Start local server
+python3 -m http.server 8080
+
+# Or use Node.js
+npx serve .
+
+# Or use any preferred local server
+```
+
+### 4. Access Interface
+Open `http://localhost:8080` in your browser and grant microphone permissions.
+
+## 🎯 Usage Examples
+
+### Voice Commands
+```
+"Hey JARVIS, open YouTube"          → Opens youtube.com
+"Find pizza recipes"                → Searches and displays results
+"Explain quantum computing"         → AI-powered explanation
+"Switch to Turkish"                 → Changes interface language
+"Clear conversation"                → Resets chat history
+```
+
+### Text Interface
+- **Type questions** in the input field
+- **Select AI model** from dropdown
+- **Use markdown** for formatted responses
+- **Copy code blocks** with built-in buttons
+
+## 🔧 Configuration
+
+### AI Model Settings
+```javascript
+// Customize AI personalities in app.js
+const AI_MODELS = {
+    'gemini': {
+        name: 'Google Gemini Pro',
+        systemPrompt: 'You are JARVIS, a helpful AI assistant...',
+        endpoint: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent'
+    },
+    // Add more models...
+};
+```
+
+### Voice Settings
+```javascript
+// Customize voice recognition
+artyom.addCommands({
+    indexes: ['open *', 'go to *'],
+    smart: true,
+    action: function(i, wildcard) {
+        openWebsite(wildcard);
+    }
+});
+```
+
+## 🛠️ Advanced Features
+
+### Smart Website Opening
+```javascript
+// Intelligent URL resolution
+"Open Discord" → discord.com
+"Go to GitHub" → github.com
+"Open Gmail" → mail.google.com
+```
+
+### Markdown Rendering
+- Real-time markdown parsing
+- Syntax-highlighted code blocks
+- Table rendering
+- Link processing
+- Image embedding
+
+### Multi-language Support
+- Dynamic language switching
+- Localized speech recognition
+- Regional voice preferences
+- Cultural context awareness
+
+## 🔐 Security
+
+- **API Key Protection** - Environment-based configuration
+- **XSS Prevention** - Content sanitization
+- **CORS Handling** - Secure cross-origin requests
+- **Input Validation** - Malicious content filtering
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open Pull Request
+
+## 📄 License
+
+This project is licensed under the EPSL License - see the [LICENSE](LICENSE.md) file for details.
+
+## Sources used
+
+- **Artyom.js** - Speech recognition library
+- **Google Gemini** - AI model provider
+- **OpenAI** - GPT model access
+- **DeepSeek** - Programming assistance
+- **Marked.js** - Markdown parsing
+- **Prism.js** - Syntax highlighting
+
+---
+
+<div align="center">
+
+**Created with 🈲 by [Akif Grape](https://github.com/akifgrape)**
+
+</div>
