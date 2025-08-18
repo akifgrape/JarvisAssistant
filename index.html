@@ -18,10 +18,11 @@
       rel="icon"
       href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎤</text></svg>"
     />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/artyom.js/1.0.6/artyom.min.js"
-      onerror="this.onerror=null;this.src='artyom.min.js'"
-    ></script>
+    <script>
+      var script = document.createElement('script');
+      script.src = "artyom.min.js";
+      document.head.appendChild(script);
+    </script>
   </head>
   <body class="dark-theme">
     <div class="container">
