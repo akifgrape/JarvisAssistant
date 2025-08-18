@@ -1,7 +1,7 @@
 # License: EPSL
 # Eighred Public Source License
 **Version 0.0.1 - October 1, 2024**
-
+ 
 Please read this License carefully before downloading this software. By downloading or using this software, you agree to be bound by the terms of this License. If you do not or cannot agree to the terms of this License, please do not download or use the software.
 
 ## 1. General; Definitions
