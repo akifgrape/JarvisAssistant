@@ -2,13 +2,13 @@
 
 # Eighred Public Source License
 
-**Version 0.0.1 - October 1, 2024**
+**Version 0.0.2 - August 19, 2025**
 
-Please read this License carefully before downloading this software. By downloading or using this software, you agree to be bound by the terms of this License. If you do not or cannot agree to the terms of this License, please do not download or use the software.
+Please read this License carefully before downloading this software. By downloading or using this software, you are agreeing to be bound by the terms of this License. If you do not or cannot agree to the terms of this License, please do not download or use the software.
 
 ## 1. General; Definitions
 
-This License applies to any program or other work that Eighred Inc. ("Eighred") makes publicly available and which contains a notice placed by Eighred identifying such program or work as "Original Code" and stating that it is subject to the terms of this Eighred Public Source License version 0.0.1 ("License"). As used in this License:
+This License applies to any program or other work that EIGHRED LIMITED ("Eighred") makes publicly available and which contains a notice placed by Eighred identifying such program or work as "Original Code" and stating that it is subject to the terms of this Eighred Public Source License version 0.0.2 ("License"). As used in this License:
 
 - **"Applicable Patent Rights"** means: (a) claims of patents that are now or hereafter acquired, owned by, or assigned to Eighred, and (b) that cover subject matter contained in the Original Code, but only to the extent necessary to use, reproduce, and/or distribute the Original Code without infringement.
 
@@ -19,6 +19,9 @@ This License applies to any program or other work that Eighred Inc. ("Eighred") 
 - **"Original Code"** means (a) the Source Code of a program or other work as originally made available by Eighred under this License, including the Source Code of any updates or upgrades to such programs or works made available by Eighred under this License, and that has been expressly identified by Eighred as such in the header file(s) of such work; and (b) the object code compiled from such Source Code and originally made available by Eighred under this License.
 
 - **"Source Code"** means the human-readable form of a program or other work that is suitable for making modifications to it, including all modules it contains, plus any associated interface definition files, scripts used to control compilation and installation of an executable (object code).
+
+- **"Larger Work"** means a work that combines Covered Code or portions thereof with code not governed by this License.
+
 
 - **"You" or "Your"** means an individual or a legal entity exercising rights under this License. For legal entities, "You" or "Your" includes any entity which controls, is controlled by, or is under common control with, You, where "control" means (a) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (b) ownership of fifty percent (50%) or more of the outstanding shares or beneficial ownership of such entity.
 
@@ -36,7 +39,7 @@ No commercial use or distribution of the Covered Code is permitted without expli
 
 ## 5. Versions of the License
 
-Eighred may publish revised or new versions of this License periodically, with each version having a distinguishing version number. Once the Original Code is published under a specific version of this License, you may continue to use it under those terms. You may also opt to use the Original Code under any later version of this License published by Eighred. No one other than Eighred has the right to modify the terms applicable to Covered Code created under this License.
+Eighred may periodically publish revised or new versions of this License, each identified by a unique version number. Once the Original Code is published under any version of this License, your use of the Original Code is strictly governed by the terms of the latest version of this License published by Eighred. Use of any earlier versions is expressly prohibited. Upon release of a new version of the License, you are required to immediately comply with and adopt the terms of the latest version.
 
 ## 6. NO WARRANTY OR SUPPORT
 
@@ -96,8 +99,29 @@ This License constitutes the entire agreement between the parties with respect t
 
 Where you are located in the province of Quebec, Canada, the following clause applies: The parties hereby confirm that they have requested that this License and all related documents be drafted in English. Les parties ont exigé que le présent contrat et tous les documents connexes soient rédigés en anglais.
 
+## 11. Restrictions on Use for Artificial Intelligence Training
+
+You may not use the Covered Code, in whole or in part, including any data, models, outputs, or components derived from it, to train or otherwise contribute to the development of artificial intelligence or machine learning models, including but not limited to language models, image models, generative models, or decision systems.
+
+This restriction applies regardless of whether the use is internal, commercial, or non-commercial.
+
+Any violation of this section constitutes a material breach of this License and will result in immediate termination under Section 9.1(a).
+
+## 12. Trademarks
+
+This License does not grant any rights to use the trademarks, service marks, logos, or trade names ("Eighred Marks") of EIGHRED LIMITED You may not use any Eighred Marks in any way, including to endorse or promote products derived from the Covered Code, without prior written permission from Eighred.
+
+
 ---
 
 **EXHIBIT A.**
 
-"Portions Copyright (c) 2020-2025 Eighred Inc. All Rights Reserved."
+Portions Copyright (c) 2020–2025 EIGHRED LIMITED All Rights Reserved.
+
+This file contains Original Code and/or Modifications of Original Code as defined in and that are subject to the Eighred Public Source License Version 0.0.2 ("EPSL"). You may not use, copy, modify, or distribute this file except in compliance with the License.
+
+You may obtain a copy of the License at https://eighred.com/epsl/
+
+The Original Code and all software distributed under the EPSL are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND EIGHRED HEREBY DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. Please see the License for the specific language governing rights and limitations under the License.
+
+Use of this file for training artificial intelligence or machine learning models is strictly prohibited.
