@@ -1,12 +1,12 @@
-# 🎤 JARVIS - Advanced AI Voice Assistant
+# JARVIS - Advanced AI Voice Assistant
 
-## 🌟 Overview
+## Overview
 
 JARVIS is a cutting-edge voice assistant that combines the power of multiple AI models with advanced web technologies. Built for modern browsers, it offers an intuitive voice-controlled interface with professional-grade features including real-time markdown rendering, multi-language support, and responsive design.
 
-## ✨ Key Features
+## Key Features
 
-### 🤖 **Multi-AI Integration**
+### **Multi-AI Integration**
 
 - **Google Gemini Pro** - Advanced reasoning and conversation
 - **OpenAI GPT-4o-mini** - High-quality text generation
@@ -14,7 +14,7 @@ JARVIS is a cutting-edge voice assistant that combines the power of multiple AI 
 - **Smart Model Selection** - Automatic optimization per query type
 - **Fallback System** - Seamless switching between providers
 
-### 🎙️ **Advanced Voice Control**
+### **Advanced Voice Control**
 
 - **Real-time Speech Recognition** using Artyom.js
 - **Natural Text-to-Speech** with voice filtering
@@ -22,7 +22,7 @@ JARVIS is a cutting-edge voice assistant that combines the power of multiple AI 
 - **Smart Speech Management** - Prevents feedback loops
 - **Voice Command Processing** - Website opening, search, conversation
 
-### 📝 **Rich Content Rendering**
+### **Rich Content Rendering**
 
 - **Live Markdown Support** - Real-time rendering with syntax highlighting
 - **Code Block Optimization** - Responsive containers with proper formatting
@@ -30,7 +30,7 @@ JARVIS is a cutting-edge voice assistant that combines the power of multiple AI 
 - **Copy-to-Clipboard** - Easy code sharing
 - **Syntax Highlighting** - Multiple programming languages
 
-### � **Developer Features**
+### **Developer Features**
 
 - **No Framework Dependencies** - Pure JavaScript ES6+
 - **Modular Architecture** - Easy to extend and customize
@@ -38,7 +38,7 @@ JARVIS is a cutting-edge voice assistant that combines the power of multiple AI 
 - **Error Handling** - Comprehensive debugging system
 - **Performance Optimized** - Fast loading and smooth interactions
 
-## � Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -49,7 +49,7 @@ JARVIS is a cutting-edge voice assistant that combines the power of multiple AI 
 ### 1. Clone & Setup
 
 ```bash
-git clone https://github.com/akifgrape/jarvis-voice-assistant.git
+git clone https://github.com/akifgrape/JarvisAssistant.git
 cd jarvis-voice-assistant
 
 # Copy environment template
@@ -86,7 +86,7 @@ npx serve .
 
 Open `http://localhost:8080` in your browser and grant microphone permissions.
 
-## 🎯 Usage Examples
+## Usage Examples
 
 ### Voice Commands
 
@@ -105,7 +105,7 @@ Open `http://localhost:8080` in your browser and grant microphone permissions.
 - **Use markdown** for formatted responses
 - **Copy code blocks** with built-in buttons
 
-## 🔧 Configuration
+## Configuration
 
 ### AI Model Settings
 
@@ -135,7 +135,7 @@ artyom.addCommands({
 });
 ```
 
-## 🛠️ Advanced Features
+## Advanced Features
 
 ### Smart Website Opening
 
@@ -161,14 +161,14 @@ artyom.addCommands({
 - Regional voice preferences
 - Cultural context awareness
 
-## 🔐 Security
+## Security
 
 - **API Key Protection** - Environment-based configuration
 - **XSS Prevention** - Content sanitization
 - **CORS Handling** - Secure cross-origin requests
 - **Input Validation** - Malicious content filtering
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create feature branch (`git checkout -b feature/amazing-feature`)
@@ -176,7 +176,7 @@ artyom.addCommands({
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the EPSL License - see the [LICENSE](LICENSE.md) file for details.
 
