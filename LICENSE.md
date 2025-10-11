@@ -120,7 +120,7 @@ Portions Copyright (c) 2020–2025 EIGHRED LIMITED All Rights Reserved.
 
 This file contains Original Code and/or Modifications of Original Code as defined in and that are subject to the Eighred Public Source License Version 0.0.2 ("EPSL"). You may not use, copy, modify, or distribute this file except in compliance with the License.
 
-You may obtain a copy of the License at https://eighred.com/epsl/
+You may obtain a copy of the License at https://eighred.com/epsl
 
 The Original Code and all software distributed under the EPSL are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND EIGHRED HEREBY DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. Please see the License for the specific language governing rights and limitations under the License.
 
